@@ -18,9 +18,4 @@ urlpatterns = [
 
     path('vote/<int:pk>/',vote.as_view()),
 
-
-   
-    
- 
-
 ] 

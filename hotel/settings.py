@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -202,3 +203,8 @@ CRONJOBS = [
     ('* * * * *',"django.core.management.call_command", ["winners_history"]),
     ('* * * * *',"django.core.management.call_command", ["user_votes_renew"]),
 ]
+
+
+from hotel_vote import jazzmin
+
+JAZZMIN_SETTINGS = jazzmin.JAZZMIN_SETTINGS
